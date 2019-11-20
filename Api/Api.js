@@ -5,11 +5,16 @@ async function login (email, password){
     form.append("email", email)
     form.append("password", password)
 
-    const res = await axios.post(`https://192.168.1.28/login`, form)
-    
-    if (res.status === 200) {
-        return true
-    } else {
+    // error handling try catch
+    try {
+        const res = await axios.post(`http://192.168.1.12:8000/api/login`, form)
+        if (res.status === 200) {
+            return true
+        } else {
+            return false
+        }
+    } catch (err) {
+        console.log('err',err)
         return false
     }
 }
