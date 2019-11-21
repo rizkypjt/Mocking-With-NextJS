@@ -101,7 +101,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className={"skin-blue sidebar-mini"}>
+        <body className={"hold-transition login-page"}>
           <Main />
           <NextScript />
         </body>

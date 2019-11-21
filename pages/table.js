@@ -5,7 +5,7 @@ class table extends Component {
         return (
             <>
                 <div class="content-wrapper">
-                    <section class="content-header">
+                    {/* <section class="content-header"> */}
                         <section className="content">
                             <div className="row">
                                 <div className="col-xs-12">
@@ -79,7 +79,7 @@ class table extends Component {
                                 </div>
                             </div>
                         </section>
-                    </section>
+                    {/* </section> */}
                 </div>
             </>
         );
